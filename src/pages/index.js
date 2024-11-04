@@ -3,9 +3,14 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import Carousel from '@site/src/components/Carousel';
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
+
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -30,6 +35,7 @@ export default function Home() {
       <HomepageHeader />
       <main>
         {/* <Navbar /> */}
+        <Carousel />
         <HomepageFeatures />
         <HomepageFeatures />
         <HomepageFeatures />
