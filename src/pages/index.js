@@ -34,10 +34,6 @@ export default function Home() {
       <main>
         {/* <Navbar /> */}
         <Carousel />
-        <HomepageFeatures />
-        <HomepageFeatures />
-        <HomepageFeatures />
-        <HomepageFeatures />
       </main>
     </Layout>
   );
