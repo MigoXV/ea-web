@@ -1,8 +1,10 @@
 // @ts-check
+import { html } from 'framer-motion/client';
 import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+  favicon: '/img/icon.png',
   title: '中南大学电子协会',
   url: 'https://eacsu.cn',
   baseUrl: '/',
@@ -59,20 +61,11 @@ const config = {
       style: 'dark',
       links: [
         {
-          title: '知识库',
+          title: '联系方式',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'QQ群',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              html: 'QQ群：960042332',
+              // href: 'https://stackoverflow.com/questions/tagged/docusaurus',
             },
           ],
         },
