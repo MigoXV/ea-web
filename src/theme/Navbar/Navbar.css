@@ -12,9 +12,23 @@
     -webkit-backdrop-filter: blur(10px); /* 兼容 Safari */
 }
 
+/* 默认导航栏样式 */
+.navbar {
+    background-color: rgba(255, 255, 255, 0); /* 全透明背景 */
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  
+  /* 链接样式 */
+  .navbar__link {
+    color: inherit; /* 继承父元素颜色 */
+    transition: color 0.3s ease;
+  }
+  
+
 /* 白天模式 */
 .light-mode-navbar {
-    background: rgba(255, 255, 255, 0.7); /* 半透明白色背景 */
+    background: rgba(255, 255, 255, 0.5); /* 半透明白色背景 */
     color: #333;
 }
 
