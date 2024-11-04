@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
-import { useColorMode } from '@docusaurus/theme-common'; // 引入 Docusaurus 的 useColorMode 钩子
+import { useColorMode, ColorModeProvider } from '@docusaurus/theme-common'; // 引入 Docusaurus 的 useColorMode 和 ColorModeProvider 钩子
 import NavbarOriginal from '@theme-original/Navbar'; // 保留原始导航栏内容和接口
 import './Navbar.css'; // 引入自定义的 CSS 文件
 
@@ -44,13 +44,15 @@ const Navbar = () => {
     }, [isScrollingUp, controls]);
 
     return (
-        <motion.div
-            className={`custom-navbar ${colorMode === 'light' ? 'light-mode-navbar' : 'dark-mode-navbar'}`} // 自定义样式
-            initial={{ y: 0 }}
-            animate={controls}
-        >
-            <NavbarOriginal /> {/* 保留 Docusaurus 原始导航栏内容 */}
-        </motion.div>
+        <ColorModeProvider>
+            <motion.div
+                className={`custom-navbar ${colorMode === 'light' ? 'light-mode-navbar' : 'dark-mode-navbar'}`} // 自定义样式
+                initial={{ y: 0 }}
+                animate={controls}
+            >
+                <NavbarOriginal /> {/* 保留 Docusaurus 原始导航栏内容 */}
+            </motion.div>
+        </ColorModeProvider>
     );
 };
 
