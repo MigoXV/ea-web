@@ -1,33 +1,28 @@
-import React from 'react';
-import Slider from 'react-slick';
+import React from "react";
+import Slider from "react-slick";
+import "./Carousel.css"; // 自定义的 CSS 文件
 
-const SliderComponent = () => {
-    const settings = {
-        dots: true,                   // 显示下方小圆点
-        infinite: true,               // 无限循环
-        speed: 500,                   // 轮播速度
-        slidesToShow: 1,              // 每次显示的幻灯片数
-        slidesToScroll: 1,            // 每次滚动的幻灯片数
-        autoplay: true,               // 自动播放
-        autoplaySpeed: 5000,          // 自动播放的间隔，5秒
-        arrows: false                 // 隐藏左右箭头
-    };
+const MySlider = () => {
+  // 配置 Slider 的选项
+  const settings = {
+    dots: true,            // 显示底部导航点
+    infinite: true,        // 无限循环
+    speed: 500,            // 动画过渡时间
+    slidesToShow: 1,       // 每次显示一张幻灯片
+    slidesToScroll: 1,     // 每次滚动一张幻灯片
+    autoplay: true,        // 自动播放
+    autoplaySpeed: 3000    // 自动播放时间间隔
+  };
 
-    return (
-        <div style={{ width: "80%", margin: "auto" }}>
-            <Slider {...settings}>
-                <div>
-                    <h3>Slide 1</h3>
-                </div>
-                <div>
-                    <h3>Slide 2</h3>
-                </div>
-                <div>
-                    <h3>Slide 3</h3>
-                </div>
-            </Slider>
-        </div>
-    );
+  return (
+    <div className="slider-container">
+      <Slider {...settings}>
+        <div className="slide pink-slide">电赛培训</div>
+        <div className="slide blue-slide">Slide 2</div>
+        <div className="slide purple-slide">Slide 3</div>
+      </Slider>
+    </div>
+  );
 };
 
-export default SliderComponent;
+export default MySlider;
