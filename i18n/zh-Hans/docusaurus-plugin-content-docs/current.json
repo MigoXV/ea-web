@@ -1,0 +1,58 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.EDA": {
+    "message": "EDA",
+    "description": "The label for category EDA in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.数字信号处理": {
+    "message": "数字信号处理",
+    "description": "The label for category 数字信号处理 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.数字图像处理": {
+    "message": "数字图像处理",
+    "description": "The label for category 数字图像处理 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.I": {
+    "message": "I",
+    "description": "The label for category I in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.II": {
+    "message": "II",
+    "description": "The label for category II in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.III": {
+    "message": "III",
+    "description": "The label for category III in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.IV": {
+    "message": "IV",
+    "description": "The label for category IV in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.V": {
+    "message": "V",
+    "description": "The label for category V in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.VI": {
+    "message": "VI",
+    "description": "The label for category VI in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.VII": {
+    "message": "VII",
+    "description": "The label for category VII in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.VIII": {
+    "message": "VIII",
+    "description": "The label for category VIII in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.现代电子技术": {
+    "message": "现代电子技术",
+    "description": "The label for category 现代电子技术 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.通信原理": {
+    "message": "通信原理",
+    "description": "The label for category 通信原理 in sidebar tutorialSidebar"
+  }
+}
