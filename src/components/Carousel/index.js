@@ -17,7 +17,7 @@ const MySlider = () => {
   return (
     <div className="slider-container">
       <Slider {...settings}>
-        <div className="slide pink-slide">Slide 1</div>
+        <div className="slide pink-slide">电赛培训</div>
         <div className="slide blue-slide">Slide 2</div>
         <div className="slide purple-slide">Slide 3</div>
       </Slider>
