@@ -46,6 +46,9 @@ devDependencies:
   '@docusaurus/types':
     specifier: 3.5.2
     version: 3.5.2(acorn@8.14.0)(react-dom@18.3.1)(react@18.3.1)
+  markdown-loader:
+    specifier: ^8.0.0
+    version: 8.0.0(webpack@5.96.1)
 
 packages:
 
@@ -5893,9 +5896,25 @@ packages:
     resolution: {integrity: sha512-o5vL7aDWatOTX8LzaS1WMoaoxIiLRQJuIKKe2wAw6IeULDHaqbiqiggmx+pKvZDb1Sj+pE46Sn1T7lCqfFtg1Q==}
     engines: {node: '>=16'}
 
+  /markdown-loader@8.0.0(webpack@5.96.1):
+    resolution: {integrity: sha512-dxrR3WhK/hERbStPFb/yeNdEeWCKa2qUDdXiq3VTruBUWufOtERX04X0K44K4dnlN2i9pjSEzYIQJ3LjH0xkEw==}
+    engines: {node: '>=12.22.9'}
+    peerDependencies:
+      webpack: ^5.0.0
+    dependencies:
+      marked: 4.3.0
+      webpack: 5.96.1
+    dev: true
+
   /markdown-table@3.0.4:
     resolution: {integrity: sha512-wiYz4+JrLyb/DqW2hkFJxP7Vd7JuTDm77fvbM8VfEQdmSMqcImWeeRbHwZjBjIFki/VaMK2BhFi7oUUZeM5bqw==}
     dev: false
+
+  /marked@4.3.0:
+    resolution: {integrity: sha512-PRsaiG84bK+AMvxziE/lCFss8juXjNaWzVbN5tXAm4XjeaS9NAHhop+PjQxz2A9h8Q4M/xGmzP8vqNwy6JeK0A==}
+    engines: {node: '>= 12'}
+    hasBin: true
+    dev: true
 
   /mdast-util-directive@3.0.0:
     resolution: {integrity: sha512-JUpYOqKI4mM3sZcNxmF/ox04XYFFkNwr0CFlrQIkCwbvH0xzMCqkMqAde9wRd80VAhaUrwFwKm2nxretdT1h7Q==}
