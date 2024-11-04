@@ -20,3 +20,7 @@
   --ifm-color-primary-lightest: #f2e9ff;
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.05); /* 深色模式下轻微背景高亮 */
 }
+
+.theme-doc-sidebar-container {
+  padding-top: 50px; /* 根据需要调整空白的大小 */
+}

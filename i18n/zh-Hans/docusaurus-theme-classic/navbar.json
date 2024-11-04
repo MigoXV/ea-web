@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "EA-CSU",
+    "description": "The title in the navbar"
+  },
+  "item.label.知识库": {
+    "message": "知识库",
+    "description": "Navbar item with label 知识库"
+  },
+  "item.label.协会动态": {
+    "message": "协会动态",
+    "description": "Navbar item with label 协会动态"
+  }
+}
