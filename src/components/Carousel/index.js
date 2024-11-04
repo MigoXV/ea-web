@@ -1,33 +1,28 @@
-import React from 'react';
-import Slider from 'react-slick';
-import { useColorMode } from '@docusaurus/theme-common';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import './Carousel.css';  // 自定义样式
+import React from "react";
+import Slider from "react-slick";
+import "./Carousel.css"; // 自定义的 CSS 文件
 
-const Carousel = () => {
-    const { colorMode } = useColorMode();  // 获取当前模式 (light 或 dark)
+const MySlider = () => {
+  // 配置 Slider 的选项
+  const settings = {
+    dots: true,            // 显示底部导航点
+    infinite: true,        // 无限循环
+    speed: 500,            // 动画过渡时间
+    slidesToShow: 1,       // 每次显示一张幻灯片
+    slidesToScroll: 1,     // 每次滚动一张幻灯片
+    autoplay: true,        // 自动播放
+    autoplaySpeed: 3000    // 自动播放时间间隔
+  };
 
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 5000,
-        arrows: false,
-    };
-
-    return (
-        <div className={`carousel-container ${colorMode === 'dark' ? 'dark-mode' : 'light-mode'}`}>
-            <Slider {...settings}>
-                <div style={{ height: '50vh', backgroundColor: 'pink' }}><h3>Slide 1</h3> <br />233</div>
-                <div className="carousel-slide yellow"><h3>Slide 2</h3></div>
-                <div className="carousel-slide blue"><h3>Slide 3</h3></div>
-            </Slider>
-        </div>
-    );
+  return (
+    <div className="slider-container">
+      <Slider {...settings}>
+        <div className="slide pink-slide">Slide 1</div>
+        <div className="slide blue-slide">Slide 2</div>
+        <div className="slide purple-slide">Slide 3</div>
+      </Slider>
+    </div>
+  );
 };
 
-export default Carousel;
+export default MySlider;

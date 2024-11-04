@@ -1,47 +1,28 @@
-/* 定义 slick-dots 样式 */
-.slick-dots li button:before {
-    font-size: 12px;
-    opacity: 1;
+/* MySlider.css */
+.slider-container {
+  width: 100vw;
+  overflow: hidden;
 }
 
-/* 明亮模式下的小圆点颜色为黑色 */
-.light-mode .slick-dots li button:before {
-    color: black;
+.slide {
+  position: relative;
+  width: 100vw;
+  padding-top: calc(100vw * 4 / 7); /* 7:4 高宽比 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  color: white;
 }
 
-/* 暗模式下的小圆点颜色为白色 */
-.dark-mode .slick-dots li button:before {
-    color: white;
+.pink-slide {
+  background-color: #ffc0cb; /* 粉色 */
 }
 
-/* 轮播图容器设置 */
-.carousel-container {
-    width: 100vw;                 /* 占满整个屏幕宽度 */
-    height: calc(100vw * 4 / 7);  /* 高度按照7:4的比例 */
-    overflow: hidden;             /* 防止溢出 */
+.blue-slide {
+  background-color: #add8e6; /* 淡蓝色 */
 }
 
-/* 设置每个幻灯片内容的宽高比 */
-.carousel-slide {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;                 /* 文字颜色设置为白色，使其在深色背景上可见 */
-    font-size: 2em;               /* 增大字体 */
-}
-
-/* 分别为每个幻灯片设置背景颜色 */
-.carousel-slide.red {
-    background-color: red;
-}
-
-.carousel-slide.yellow {
-    background-color: yellow;
-    color: black;  /* 黄色背景下的文字颜色设为黑色，提升对比 */
-}
-
-.carousel-slide.blue {
-    background-color: blue;
+.purple-slide {
+  background-color: #dda0dd; /* 淡紫色 */
 }
