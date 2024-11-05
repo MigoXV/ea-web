@@ -3,7 +3,8 @@ FROM node:18-alpine AS base
 
 ENV FORCE_COLOR=0
 
-RUN corepack enable
+# RUN npm config set registry https://registry.npmmirror.com && \
+#     corepack enable
 
 WORKDIR /opt/docusaurus
 
@@ -13,7 +14,10 @@ WORKDIR /opt/docusaurus
 ## Copy over the source code.
 COPY . /opt/docusaurus/
 ## Install dependencies with `--frozen-lockfile` to ensure reproducibility.
-RUN pnpm install --registry=https://registry.npmmirror.com --frozen-lockfile
+RUN npm config set registry https://registry.npmmirror.com && \
+    npm install -g pnpm@8.10.5 && \
+    pnpm config set registry https://registry.npmmirror.com && \
+    pnpm install --frozen-lockfile --frozen-lockfile
 
 ## Build the static site.
 RUN pnpm build 
