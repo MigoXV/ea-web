@@ -44,7 +44,6 @@ const Navbar = () => {
     }, [isScrollingUp, controls]);
 
     return (
-        <ColorModeProvider>
             <motion.div
                 className={`custom-navbar ${colorMode === 'light' ? 'light-mode-navbar' : 'dark-mode-navbar'}`} // 自定义样式
                 initial={{ y: 0 }}
@@ -52,7 +51,6 @@ const Navbar = () => {
             >
                 <NavbarOriginal /> {/* 保留 Docusaurus 原始导航栏内容 */}
             </motion.div>
-        </ColorModeProvider>
     );
 };
 
