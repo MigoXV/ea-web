@@ -17,9 +17,9 @@ const MySlider = () => {
   return (
     <div className="slider-container">
       <Slider {...settings}>
-        <div className="slide pink-slide">电赛培训</div>
-        <div className="slide blue-slide">Slide 2</div>
-        <div className="slide purple-slide">Slide 3</div>
+        <div className="slide pink-slide">电赛</div>
+        <div className="slide blue-slide">蓝桥杯</div>
+        <div className="slide purple-slide">学生科普</div>
       </Slider>
     </div>
   );
